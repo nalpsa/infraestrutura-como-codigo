@@ -5,6 +5,7 @@
 ## Criar Diretórios:
 
 | /publico | /adm | /ven | /sec |
+|---|---|---|---|
 
 - /publico
 - /adm
