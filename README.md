@@ -1,7 +1,11 @@
 # Projeto Infraestrutura como código - DEVOPs DIO
 
 # ESCOPO:
-Criar Diretórios:
+
+## Criar Diretórios:
+
+| /publico | /adm | /ven | /sec |
+
 - /publico
 - /adm
 - /ven
