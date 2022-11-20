@@ -2,40 +2,27 @@
 
 # ESCOPO:
 
-## Criar Diretórios:
+## Criar Diretórios na raiz "/":
 
-| /publico | /adm | /ven | /sec |
+| publico | adm | ven | sec |
 |---|---|---|---|
 
-- /publico
-- /adm
-- /ven
-- /sec
+## Criar Grupos:
 
- Criar Grupos
-- GRP_ADM
-- GRP_VEN
-- GRP_SEC
-
-USUARIOS
-
-GRP_ADM
-carlos
-maria
-joao
-
-GRP_VEN
-debora
-sebastiana
-roberto
-
-GRP_SEC
-josefina
-amanda
-rogerio
+| GRP_ADM | GRP_VEN | GRP_SEC |
+|---|---|---|
 
 
-Definições
+## Criar Usuários:
+
+| GRP_ADM | GRP_VEN | GRP_SEC |
+|---|---|---|
+| Carlos | Debora | Josefina |
+| Maria | Sebastiana | Amanda |
+| Joao | Roberto | Rogerio |
+
+
+# Definições
 
 * Excluir diretórios, arquivos, grupos e usuários criados anteriormente;
 * Todo provisionamento deve ser feito em um arquivo do tipo Bash Script;
