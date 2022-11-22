@@ -1,4 +1,4 @@
-a# Projeto Infraestrutura como código - DEVOPs DIO
+# Projeto Infraestrutura como código - DEVOPs DIO
 
 <a name="projeto"></a>
 
@@ -7,9 +7,9 @@ a# Projeto Infraestrutura como código - DEVOPs DIO
 
 
 <a id="projeto1"></a>
-# Projeto Infraestrutura como código - DEVOPs DIO
+# Projeto 1
 
-# ESCOPO:
+## ESCOPO:
 
 ## Criar Diretórios na raiz "/":
 
@@ -41,8 +41,9 @@ a# Projeto Infraestrutura como código - DEVOPs DIO
 * Os usuários não poderão ter permissão de leitura, escrita e execução em diretórios de departamentos que eles não pertencem;
 * Subir arquivo de script criado para sua conta no GitHub.
 
+
 <a id="projeto2"></a>
-# Projeto Infraestrutura como código - DEVOPs DIO
+# Projeto 2
 
 ## Automatizar a instalação do Apache
 
