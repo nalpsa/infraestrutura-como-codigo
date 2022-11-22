@@ -3,7 +3,7 @@
 clear
 
 ## ARMAZENA A SENHA DO USUÁRIO PARA USAR NO SCRIPT ##
-read -p "Digite a sua senha para iniciar a instalação: " -s PWDSH
+read -p "Digite a sua senha para iniciar a execução do script: " -s PWDSH
 
 echo "Preparando o ambiente..."
 echo "."
