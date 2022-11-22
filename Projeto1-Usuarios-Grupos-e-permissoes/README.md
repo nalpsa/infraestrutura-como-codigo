@@ -1,15 +1,6 @@
 # Projeto Infraestrutura como código - DEVOPs DIO
 
-<a name="projeto"></a>
-
-- [Projeto 1 - Usuários, Grupos e Permissões](#projeto1)
-- [Projeto 2 - Provisionando um servidor web]([#projeto2](https://github.com/nalpsa/infraestrutura-como-codigo/tree/main/Projeto2-Provisionando-servidor-web))
-
-
-<a id="projeto1"></a>
-# Projeto 1
-
-## ESCOPO:
+# ESCOPO:
 
 ## Criar Diretórios na raiz "/":
 
@@ -41,17 +32,3 @@
 * Os usuários não poderão ter permissão de leitura, escrita e execução em diretórios de departamentos que eles não pertencem;
 * Subir arquivo de script criado para sua conta no GitHub.
 
-
-<a id="projeto2"></a>
-# Projeto 2
-
-## Automatizar a instalação do Apache
-
-* Atualizar repositório apt
-* Atualizar o sistema
-* Baixar apache
-* Baixar Unzip
-* Baixar site que será hospedado no apache
-* extrair conteúdo e salvar na pasta do apache
-
-* Ao final do Script informar o IP do apache.
