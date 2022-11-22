@@ -1,6 +1,6 @@
-# Projeto Infraestrutura como código - DEVOPs DIO
+# Projeto 1
 
-# ESCOPO:
+## ESCOPO:
 
 ## Criar Diretórios na raiz "/":
 
@@ -31,4 +31,3 @@
 * Os usuários de cada grupo terão permissão total dentro do seu respectivo diretório;
 * Os usuários não poderão ter permissão de leitura, escrita e execução em diretórios de departamentos que eles não pertencem;
 * Subir arquivo de script criado para sua conta no GitHub.
-

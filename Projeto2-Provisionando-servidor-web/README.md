@@ -1,4 +1,4 @@
-# Projeto Infraestrutura como código - DEVOPs DIO
+# Projeto 2
 
 ## Automatizar a instalação do Apache
 
