@@ -3,7 +3,7 @@
 <a name="projeto"></a>
 
 - [Projeto 1 - Usuários, Grupos e Permissões](#projeto1)
-- [Projeto 2 - Provisionando um servidor web]([#projeto2](https://github.com/nalpsa/infraestrutura-como-codigo/tree/main/Projeto2-Provisionando-servidor-web))
+- [Projeto 2 - Provisionando um servidor web](https://github.com/nalpsa/infraestrutura-como-codigo/tree/main/Projeto2-Provisionando-servidor-web)
 
 
 <a id="projeto1"></a>
