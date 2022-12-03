@@ -1,2 +1,37 @@
-version: "3"
+version: "3.7"
+
 services:
+  web:
+    container_name: web
+    image: webdevops/php-apache:alpine-php7
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - /dados/web/:/app
+
+    networks:
+      fgnnet:
+        ipv4_address: 10.20.30.2
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "ol9hy2"
+      MYSQL_DATABASE: "fgndb"
+    ports:
+      - "3306:3308"
+    volumes:
+      - /dados/db:/var/lib/mysql
+
+    networks:
+      fgnnet:
+        ipv4_address: 10.20.30.3
+
+networks:
+  fgnnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "10.20.30.0/24"
+          gateway: 10.20.30.1
