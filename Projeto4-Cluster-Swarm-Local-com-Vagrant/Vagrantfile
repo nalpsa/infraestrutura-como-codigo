@@ -1,0 +1,30 @@
+IMAGEM = "bento/ubuntu-22.04"
+NODES = 4
+
+Vagrant.configure("2") do |vmvrt|
+    vmvrt.vm.define "master" do |vrtconfig|
+        vrtconfig.vm.box = IMAGEM
+        vrtconfig.vm.hostname = "master"
+        vrtconfig.vm.network :private_network, ip: "20.20.20.1"
+        vrtconfig.vm.provider :virtualbox do |vb|
+            vb.customize ["modifyvm", :id, "--memory", "1024"]
+            vb.customize ["modifyvm", :id, "--cpus", "1"]
+        end
+        vrtconfig.vm.provision "shell", path: "dockerInstall.sh"
+        vrtconfig.vm.provision "shell", path: "master.sh"
+    end
+
+    (1..NODES).each do |i|
+        vmvrt.vm.define "fgn-0#{1}" do |vrtconfig|
+            vrtconfig.vm.box = IMAGEM
+            vrtconfig.vm.hostname = "fgn-0#{1}"
+            vrtconfig.vm.network :private_network, ip: "20.20.20.#{i+2}"
+            vrtconfig.vm.provider :virtualbox do |vb|
+                vb.customize ["modifyvm", :id, "--memory", "512"]
+                vb.customize ["modifyvm", :id, "--cpus", "1"]
+            end
+            vrtconfig.vm.provision "shell", path: "dockerInstall.sh"
+            vrtconfig.vm.provision "shell", path: "worker.sh"
+        end
+    end
+end
